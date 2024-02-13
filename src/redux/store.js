@@ -11,4 +11,4 @@ const store=configureStore({
 
 export default store;
 
-export const server="https://blinkit-backend-f2qr.onrender.com"
+export const server="https://blinkit-backend-f2qr.onrender.com/api/v1"
