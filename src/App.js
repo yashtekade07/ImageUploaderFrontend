@@ -37,7 +37,6 @@ useEffect(()=>{
       <>
       <Routes>
         <Route path="/" element={<Home/>} />
-        {/*  */}
         <Route path='/profile' element={<ProtectedRoute isAuthenticated={isAuthenticated}> <Profile user={user}/></ProtectedRoute>}/>
         <Route path='/updateprofile' element={<ProtectedRoute isAuthenticated={isAuthenticated}><UpdateProfile user={user}/></ProtectedRoute>}/>
         <Route path='/login' element={<ProtectedRoute isAuthenticated={!isAuthenticated} redirect='/profile'><Login /></ProtectedRoute>}/>
